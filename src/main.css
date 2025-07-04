@@ -1,0 +1,150 @@
+.navbar{
+    position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100px;
+    background-color: #151925;
+    transition: top 0.3s;
+}
+.left{
+    width:35%;
+    display: flex;
+    justify-content: left;
+}
+.right{
+    width:55%;
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    background-color: transparent;
+    border-color: transparent;
+    width:120px;
+    height:30px;
+    font-size: 18px;
+    color:#03B0FD;
+    cursor: pointer;
+}
+.button {
+  position: relative;
+  border: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.button:focus,
+.button:hover {
+  color: #fff;
+}
+
+.button:focus:after,
+.button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+
+body{
+    background-color: #151925;
+}
+.title{
+    color:white;
+    font-family:"Poppins", sans-serif;
+    font-weight: 600;
+}
+
+
+@keyframes typing {
+  /* === Web Developer (0% to 33%) === */
+  0%, 2%   { content: ""; }
+  4%       { content: "W"; }
+  6%       { content: "We"; }
+  8%       { content: "Web"; }
+  10%      { content: "Web "; }
+  12%      { content: "Web d"; }
+  14%      { content: "Web de"; }
+  16%      { content: "Web dev"; }
+  18%      { content: "Web deve"; }
+  20%      { content: "Web devel"; }
+  22%      { content: "Web develo"; }
+  24%      { content: "Web develop"; }
+  26%      { content: "Web develope"; }
+  28%      { content: "Web developer"; }
+  32%, 33% { content: "Web developer"; }
+
+  /* === Problem Solver (34% to 66%) === */
+  34%, 36% { content: ""; }
+  38%      { content: "P"; }
+  40%      { content: "Pr"; }
+  42%      { content: "Pro"; }
+  44%      { content: "Prob"; }
+  46%      { content: "Probl"; }
+  48%      { content: "Proble"; }
+  50%      { content: "Problem"; }
+  52%      { content: "Problem "; }
+  54%      { content: "Problem s"; }
+  56%      { content: "Problem so"; }
+  58%      { content: "Problem sol"; }
+  60%      { content: "Problem solv"; }
+  62%      { content: "Problem solve"; }
+  64%      { content: "Problem solver"; }
+  66%      { content: "Problem solver"; }
+
+  /* === AI-ML Enthusiast (67% to 99%) === */
+  67%, 69% { content: ""; }
+  71%      { content: "A"; }
+  73%      { content: "AI"; }
+  75%      { content: "AI-"; }
+  77%      { content: "AI-M"; }
+  79%      { content: "AI-ML"; }
+  81%      { content: "AI-ML "; }
+  83%      { content: "AI-ML E"; }
+  85%      { content: "AI-ML En"; }
+  87%      { content: "AI-ML Ent"; }
+  89%      { content: "AI-ML Enth"; }
+  91%      { content: "AI-ML Enthu"; }
+  93%      { content: "AI-ML Enthus"; }
+  95%      { content: "AI-ML Enthusi"; }
+  97%      { content: "AI-ML Enthusia"; }
+  99%      { content: "AI-ML Enthusiast"; }
+  100%     { content: "AI-ML Enthusiast"; }
+}
+
+
+
+  .typewriter {
+    --caret:#03B0FD;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
