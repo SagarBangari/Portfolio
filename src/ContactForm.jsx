@@ -22,7 +22,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3033/api/send', formData); // Adjust URL if needed
+      const response = await axios.post('https://portfolio-backend-uxbs.onrender.com/api/send', formData); // Adjust URL if needed
       alert(response.data);
     } catch (error) {
       console.error('Error sending email:', error);
